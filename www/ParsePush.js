@@ -6,6 +6,9 @@ var ParsePush = {
   },
   getNotification: function(data, successCallback, failCallback) {
     exec(successCallback, failCallback, 'ParsePush', 'getNotification', [data]);
+  },
+  receiveNotification: function(data) {
+    console.log(data);
   }
 }
 
