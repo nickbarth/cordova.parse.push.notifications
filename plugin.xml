@@ -23,8 +23,10 @@
       </feature>
       <plugin name="ParsePush" value="ParsePush"/>
     </config-file>
-    <header-file src="src/ios/ParsePush.h" />
-    <source-file src="src/ios/ParsePush.m" />
+
+    <!-- Plugin Code -->
+    <header-file src="src/ios/AppDelegate+ParsePush.h" />
+    <source-file src="src/ios/AppDelegate+ParsePush.m" />
 
     <!-- Parse framework -->
     <framework src="src/ios/frameworks/Parse.framework" custom="true" />
