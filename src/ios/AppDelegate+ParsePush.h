@@ -1,7 +1,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate (notification)
-  - (bool)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions;
+  - (BOOL)application:(UIApplication *)application customDidFinishLaunchingWithOptions:(NSDictionary*)launchOptions;
   - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
   - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
   - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo;
