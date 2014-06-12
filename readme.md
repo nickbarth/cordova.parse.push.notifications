@@ -5,7 +5,7 @@ Cordova / Phonegap plugin for native integration of Apple Push Notifications for
 ## Adding the Plugin
 
 ```
-  cordova plugin add https://github.com/nickbarth/cordova.phonegap.audio.encode.git
+  cordova plugin add https://github.com/nickbarth/cordova.parse.push.notifications
 ```
 
 ### License
