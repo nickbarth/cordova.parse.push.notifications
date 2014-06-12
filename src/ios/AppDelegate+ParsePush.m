@@ -5,7 +5,7 @@
 #import <Cordova/CDV.h>
 #import <objc/runtime.h>
 
-@implementation AppDelegate
+@implementation AppDelegate (ParsePush)
 
 + (void)load {
   Method original = class_getInstanceMethod(self, @selector(didFinishLaunchingWithOptions:));

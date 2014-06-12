@@ -1,6 +1,6 @@
 #import "AppDelegate.h"
 
-@interface AppDelegate (notification)
+@interface AppDelegate (ParsePush)
   - (BOOL)application:(UIApplication *)application customDidFinishLaunchingWithOptions:(NSDictionary*)launchOptions;
   - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
   - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
