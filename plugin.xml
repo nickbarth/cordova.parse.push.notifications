@@ -28,5 +28,17 @@
 
     <!-- Parse framework -->
     <framework src="src/ios/frameworks/Parse.framework" custom="true" />
+
+    <!-- System frameworks -->
+    <framework src="libz.dylib" />
+    <framework src="AudioToolbox.framework" />
+    <framework src="CFNetwork.framework" />
+    <framework src="CoreGraphics.framework" />
+    <framework src="CoreLocation.framework" />
+    <framework src="MobileCoreServices.framework" />
+    <framework src="QuartzCore.framework" />
+    <framework src="Security.framework" />
+    <framework src="StoreKit.framework" />
+    <framework src="SystemConfiguration.framework" />
   </platform>
 </plugin>
