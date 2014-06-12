@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova.parse.push.notifications" version="1.0.0">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>ParsePush</name>
+  <description>Cordova / Phonegap plugin for native integration of Apple Push Notifications for iOS with Parse.</description>
+  <author>Nick Barth</author>
+  <keywords>iOS Push Notifications Parse</keywords>
+  <license>MIT</license>
+
+  <!-- JavaScript interface -->
+  <js-module src="www/ParsePush.js" name="ParsePush" target="www/ParsePush.js">
+    <clobbers target="window.ParsePush" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="plugins">
+      <feature name="ParsePush">
+        <param name="ios-package" value="ParsePush"/>
+        <param name="onload" value="true" />
+      </feature>
+      <plugin name="ParsePush" value="ParsePush"/>
+    </config-file>
+    <header-file src="src/ios/ParsePush.h" />
+    <source-file src="src/ios/ParsePush.m" />
+  </platform>
+</plugin>
