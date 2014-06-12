@@ -3,10 +3,17 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <Cordova/CDV.h>
+#import <objc/runtime.h>
 
-@implementation AppDelegate (notification)
+@implementation AppDelegate
 
-- (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
++ (void)load {
+  Method original = class_getInstanceMethod(self, @selector(didFinishLaunchingWithOptions:));
+  Method custom = class_getInstanceMethod(self, @selector(customDidFinishLaunchingWithOptions:));
+  method_exchangeImplementations(original, custom);
+}
+
+- (BOOL)application:(UIApplication*)application customDidFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
   /******************************************************************************/
   // Uncomment and fill in with your Parse credentials:
   // [Parse setApplicationId:@"your_application_id" clientKey:@"your_client_key"];
