@@ -31,6 +31,9 @@
     <!-- Parse framework -->
     <framework src="src/ios/frameworks/Parse.framework" custom="true" />
 
+    <!-- Parse framework -->
+    <framework src="src/ios/frameworks/FacebookSDK.framework" custom="true" />
+
     <!-- System frameworks -->
     <framework src="libz.dylib" />
     <framework src="AudioToolbox.framework" />
