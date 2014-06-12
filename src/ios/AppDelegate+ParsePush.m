@@ -20,6 +20,13 @@
   /******************************************************************************/
   [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
 
+  if (launchOptions != nil) {
+    NSDictionary* notification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (notification != nil) {
+      NSLog(@"Opened: %@", notification);
+    }
+  }
+
   return [self application:application customDidFinishLaunchingWithOptions:launchOptions];
 }
 
