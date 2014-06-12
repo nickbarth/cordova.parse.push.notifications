@@ -20,7 +20,7 @@
   /******************************************************************************/
   [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
 
-  return [super application:application customDidFinishLaunchingWithOptions:launchOptions];
+  return [self application:application customDidFinishLaunchingWithOptions:launchOptions];
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
