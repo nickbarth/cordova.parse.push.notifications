@@ -36,6 +36,7 @@
 
     <!-- System frameworks -->
     <framework src="libz.dylib" />
+    <framework src="Foundation.framework" />
     <framework src="AudioToolbox.framework" />
     <framework src="CFNetwork.framework" />
     <framework src="CoreGraphics.framework" />
