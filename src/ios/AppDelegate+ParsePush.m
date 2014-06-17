@@ -18,6 +18,8 @@
   // Uncomment and fill in with your Parse credentials:
   // [Parse setApplicationId:@"your_application_id" clientKey:@"your_client_key"];
   /******************************************************************************/
+  [[PFInstallation currentInstallation] setObject:[PFUser currentUser] forKey:@"user"];
+  [[PFInstallation currentInstallation] saveEventually];
   [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
 
   if (launchOptions != nil) {
